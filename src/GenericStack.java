@@ -9,16 +9,18 @@ public class GenericStack {
 	private int top;
 	// GENERIC ArrayList
 	private ArrayList<T> items = new ArrayList<T>(); // T must be defined.
-	ArrayList<T> items;
 	
+	ArrayList<T> items[];
+	
+	/* ERROR CODE
 	public ArrayStack(int maxSize) {
-		items = new arrayList<>(); // The fuck am I doing in this file...
-	}
+		items = new ArrayList<T>(); // The fuck am I doing in this file...
+	}*/
 	
 	public GenericStack() {}
 	
-	public int pop() {
+	public int pop() {}
 	
-	}
-	public int push() P{;}
 }
+	// ERROR LINE
+	// public int push() P{;}

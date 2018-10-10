@@ -12,11 +12,9 @@
 
 package sample;
 
-import java.lang.Math;
-
 public interface CredentialAssigner {
-	boolean isDuplicate;
-	double userID;
+	boolean isDuplicate = true;   // DUMMY VALUES
+	double userID = 1.0;          // DUMMY VALUES
 	
 	// Code to assign a randomized ID to every user
 	

@@ -1,5 +1,3 @@
-package sample;
-
 /**
  * Created 10/01/2018
  *
@@ -7,6 +5,7 @@ package sample;
  * In class activity. Best resource is https://www.tutorialspoint.com/java/java_generics.htm
  * These are used to print an array OF ANY TYPE.
  * Generics are most often used for ArrayLists,  then TreeSet,TreMap, ArrayDeque...
+ *
  *
  * https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html
  *
@@ -16,15 +15,16 @@ package sample;
 public class Generics {
 	
 	public static void genericDemo() {
-		//	The call is basically the same.
-		Integer() intArray = {1, 2, 3;}
+		// The call is basically the same.
+		// Integer() intArray = {1, 2, 3;} Previously causing error.
 	}
 	
 	// JP2.3 'Type parameter names'
-	// 'E' replaces the D A T A     T Y P E.
-	public static <E> void  printArray(E[] inputArray){
+	// 'E' replaces the D A T A     T Y P E. 'E' represents "element". Common in ArrayLists.
+	public static <E> void  printArray(E[] inputArray) {
 		for (E element : inputArray)
-			System.out.println(E);
+			System.out.printf("%s", element);
+		System.out.println();
 	}
 	
 	// Wildcards used to say 'I don't know what data type it'll be...but I CAN tell you it'll be
